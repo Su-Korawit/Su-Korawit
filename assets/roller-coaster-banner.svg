@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" role="img" aria-label="Roller Coaster — a productivity RPG for Thai students">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b1033"/>
+      <stop offset="0.55" stop-color="#6d28d9"/>
+      <stop offset="1" stop-color="#ff7eb6"/>
+    </linearGradient>
+    <linearGradient id="rail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd166"/>
+      <stop offset="1" stop-color="#ff5d8f"/>
+    </linearGradient>
+    <style>
+      .t { font-family: 'Courier New', monospace; font-weight: 700; }
+      @keyframes ride { 0% { offset-distance: 0%; } 100% { offset-distance: 100%; } }
+      @keyframes tw { 0%,100% { opacity: .25; } 50% { opacity: 1; } }
+      .car { offset-path: path('M -20 250 C 120 250 140 90 280 90 C 420 90 420 235 560 235 C 700 235 720 70 920 70'); animation: ride 7s linear infinite; }
+      .s { animation: tw 2.4s ease-in-out infinite; }
+      .s2 { animation: tw 3.1s ease-in-out infinite .6s; }
+    </style>
+  </defs>
+  <rect width="900" height="300" fill="url(#sky)"/>
+  <g fill="#fff">
+    <rect class="s" x="60" y="40" width="4" height="4"/><rect class="s2" x="150" y="85" width="3" height="3"/>
+    <rect class="s" x="260" y="30" width="4" height="4"/><rect class="s2" x="380" y="60" width="3" height="3"/>
+    <rect class="s" x="520" y="25" width="4" height="4"/><rect class="s2" x="640" y="55" width="3" height="3"/>
+    <rect class="s" x="760" y="35" width="4" height="4"/><rect class="s2" x="840" y="90" width="3" height="3"/>
+    <rect class="s" x="95" y="130" width="3" height="3"/><rect class="s2" x="700" y="130" width="3" height="3"/>
+  </g>
+  <g stroke="#2a1850" stroke-width="3" opacity=".55">
+    <line x1="140" y1="170" x2="140" y2="300"/><line x1="200" y1="125" x2="200" y2="300"/><line x1="280" y1="92" x2="280" y2="300"/>
+    <line x1="360" y1="100" x2="360" y2="300"/><line x1="440" y1="170" x2="440" y2="300"/><line x1="560" y1="236" x2="560" y2="300"/>
+    <line x1="650" y1="215" x2="650" y2="300"/><line x1="730" y1="130" x2="730" y2="300"/><line x1="820" y1="82" x2="820" y2="300"/>
+  </g>
+  <path d="M -20 250 C 120 250 140 90 280 90 C 420 90 420 235 560 235 C 700 235 720 70 920 70" fill="none" stroke="url(#rail)" stroke-width="7" stroke-linecap="round"/>
+  <g class="car" style="offset-rotate: auto">
+    <rect x="-16" y="-14" width="32" height="14" fill="#fff"/><rect x="-16" y="-14" width="32" height="5" fill="#ff5d8f"/>
+    <rect x="-12" y="0" width="7" height="7" fill="#2a1850"/><rect x="5" y="0" width="7" height="7" fill="#2a1850"/>
+  </g>
+  <text class="t" x="450" y="150" text-anchor="middle" font-size="52" fill="#fff" stroke="#2a1850" stroke-width="6" paint-order="stroke">ROLLER COASTER</text>
+  <text class="t" x="450" y="184" text-anchor="middle" font-size="16" fill="#ffe6f2" letter-spacing="3">A PRODUCTIVITY RPG FOR THAI STUDENTS</text>
+</svg>
